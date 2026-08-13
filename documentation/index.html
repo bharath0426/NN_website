@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivaya — Yoga Studio & Fitness Template Documentation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="doc-wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <span>🧘‍♂️</span> Nivaya
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#welcome" class="nav-link active">Welcome</a></li>
+                <li class="nav-item"><a href="#structure" class="nav-link">Folder Structure</a></li>
+                <li class="nav-item"><a href="#installation" class="nav-link">Installation</a></li>
+                <li class="nav-item"><a href="#customization" class="nav-link">Customization</a></li>
+                <li class="nav-item"><a href="#html-structure" class="nav-link">HTML Structure</a></li>
+                <li class="nav-item"><a href="#credits" class="nav-link">Credits & Sources</a></li>
+                <li class="nav-item"><a href="#support" class="nav-link">Support</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="header">
+            <div>
+                <h1 class="mt-0">Documentation</h1>
+                <p class="meta-info">Nivaya — Yoga Studio & Fitness HTML Template | Version 1.0.0</p>
+            </div>
+            <div class="theme-switcher">
+                <button class="theme-btn" data-theme="light">Light</button>
+                <button class="theme-btn" data-theme="dark">Dark</button>
+                <button class="theme-btn active" data-theme="system">System</button>
+            </div>
+        </header>
+
+        <!-- Welcome Section -->
+        <section id="welcome" class="doc-section">
+            <h2 class="mt-0">Welcome</h2>
+            <p>Thank you for purchasing <strong>Nivaya — Yoga Studio & Fitness HTML Template</strong>. We are thrilled you chose our template for your project!</p>
+            <p>Nivaya is a clean, modern, and pixel-perfect Bootstrap 5 template designed specifically for yoga studios, fitness centers, meditation clubs, and wellness retreats. This documentation will guide you through the setup and customization process.</p>
+            <div class="alert alert-info">
+                <strong>Note:</strong> This is a static HTML template, not a WordPress theme. You will need basic knowledge of HTML and CSS to customize it.
+            </div>
+        </section>
+
+        <!-- Folder Structure -->
+        <section id="structure" class="doc-section">
+            <h2>Folder Structure</h2>
+            <p>Once you unzip the package, you will see a folder containing the main template files. Here is the structure:</p>
+            <div class="file-tree">
+                <ul>
+                    <li><strong>nivaya/</strong> (Main Template Folder)
+                        <ul>
+                            <li><strong>css/</strong>
+                                <ul>
+                                    <li>bootstrap.min.css (Bootstrap 5.3.3)</li>
+                                    <li>main.css (Main theme styles)</li>
+                                </ul>
+                            </li>
+                            <li><strong>js/</strong>
+                                <ul>
+                                    <li>bootstrap.bundle.min.js</li>
+                                    <li>main.js (Custom logic)</li>
+                                </ul>
+                            </li>
+                            <li><strong>images/</strong> (All template images)</li>
+                            <li>index.html (Homepage)</li>
+                            <li>about-us.html</li>
+                            <li>classes.html</li>
+                            <li>... (Other HTML pages)</li>
+                        </ul>
+                    </li>
+                    <li><strong>documentation/</strong> (This documentation)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Installation -->
+        <section id="installation" class="doc-section">
+            <h2>Installation</h2>
+            <p>To get started with Nivaya, follow these simple steps:</p>
+            <ol>
+                <li>Unzip the downloaded package from ThemeForest.</li>
+                <li>Navigate to the <code>nivaya/</code> folder.</li>
+                <li>Open <code>index.html</code> in your favorite browser to preview the site locally.</li>
+                <li>To publish, upload the contents of the <code>nivaya/</code> folder to your web server via FTP/SFTP.</li>
+            </ol>
+            <p>Make sure your server is configured to serve <code>.html</code> files (which most are by default).</p>
+        </section>
+
+        <!-- Customization -->
+        <section id="customization" class="doc-section">
+            <h2>Customization</h2>
+            
+            <h3>Colors (Global Styles)</h3>
+            <p>Nivaya uses <strong>CSS Variables</strong> for easy global customization. You can change the entire color scheme by editing the <code>:root</code> variables in <code>css/main.css</code>.</p>
+            <pre><code>:root {
+  --color-primary: #362d27; /* Dark Brown */
+  --color-secondary: #f9f5e8; /* Cream */
+  --color-text: #3e332b;
+  --color-accent: #fffbf0;
+  --color-border: #ede8d9;
+}</code></pre>
+
+            <h3>Typography</h3>
+            <p>Template uses Google Fonts. You can change them in the <code>@import</code> section of <code>main.css</code> and update the variables:</p>
+            <pre><code>--font-display: "Marcellus", serif;
+--font-body: "Catamaran", sans-serif;</code></pre>
+
+            <h3>Images</h3>
+            <p>All images are located in the <code>images/</code> folder. To replace an image, simply overwrite the existing file with your own using the same filename, or update the <code>&lt;img src="..."&gt;</code> path in the HTML files.</p>
+        </section>
+
+        <!-- HTML Structure -->
+        <section id="html-structure" class="doc-section">
+            <h2>HTML Structure</h2>
+            <p>Nivaya follows a semantic and organized HTML5 structure for better SEO and readability.</p>
+            <pre><code>&lt;!-- Header --&gt;
+&lt;header class="site-header"&gt;...&lt;/header&gt;
+
+&lt;!-- Main Content --&gt;
+&lt;main&gt;
+  &lt;!-- Each section has its own class --&gt;
+  &lt;section class="hero-section"&gt;...&lt;/section&gt;
+  &lt;section class="about-section"&gt;...&lt;/section&gt;
+&lt;/main&gt;
+
+&lt;!-- Footer --&gt;
+&lt;footer class="site-footer"&gt;...&lt;/footer&gt;</code></pre>
+        </section>
+
+        <!-- Credits -->
+        <section id="credits" class="doc-section">
+            <h2>Credits & Sources</h2>
+            <ul>
+                <li><strong>Framework:</strong> <a href="https://getbootstrap.com/" target="_blank">Bootstrap 5.3.3</a></li>
+                <li><strong>Typography:</strong> <a href="https://fonts.google.com/" target="_blank">Google Fonts (Marcellus, Catamaran)</a></li>
+                <li><strong>Icons:</strong> Custom SVG Icons</li>
+                <li><strong>Images:</strong> <a href="https://www.pexels.com/" target="_blank">Pexels</a> and <a href="https://unsplash.com/" target="_blank">Unsplash</a> (Images used in demo are for preview purposes only).</li>
+            </ul>
+        </section>
+
+        <!-- Support -->
+        <section id="support" class="doc-section">
+            <h2>Support</h2>
+            <p>If you have any questions or need help with the template, please feel free to reach out to us via our ThemeForest profile page. We are happy to help!</p>
+            <div class="alert alert-info">
+                <strong>Response Time:</strong> We usually respond within 24-48 hours during business days.
+            </div>
+        </section>
+
+        <footer style="margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.9rem;">
+            &copy; 2026 Nivaya Template. Created by CodeIn Solutions.
+        </footer>
+    </main>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
