@@ -3656,3 +3656,89 @@ a {
     font-size: var(--fs-h4);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+.why-social {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  background: #f8f3e8;
+  color: #332b27;
+
+  border: 1px solid rgba(51, 43, 39, 0.10);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* SVG itself */
+.why-social svg {
+  width: 24px;
+  height: 24px;
+
+  display: block;
+
+  fill: currentColor;
+
+  flex-shrink: 0;
+}
+
+/* WHATSAPP */
+.why-social.whatsapp {
+  color: #25D366;
+}
+
+.why-social.whatsapp:hover {
+  background: #332b27;
+  color: #ffffff;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 15px rgba(37, 211, 102, 0.30);
+}
+
+/* CALL */
+.why-social.call {
+  color: #ffffff;
+  background: #332b27;
+}
+
+.why-social.call:hover {
+  background: #ffffff;
+  color: #332b27;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.18);
+}
+
+/* Optional: make the icons slightly bigger */
+.why-social svg {
+  width: 23px;
+  height: 23px;
+}
+
+
+.why-social.call {
+    position: relative;
+    left: -30px;
+}
