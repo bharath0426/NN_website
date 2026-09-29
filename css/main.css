@@ -3741,4 +3741,18 @@ a {
 .why-social.call {
     position: relative;
     left: -30px;
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .why-social.call {
+        left: 60px;
+    }
+
+    .why-social {
+        position: relative;
+        top: 20px;
+        left: 50%;
+    }
 }
